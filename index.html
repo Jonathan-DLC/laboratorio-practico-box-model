@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credencial Digital - DevGenn</title>
+
+  <!-- 1. Tipografía Google Fonts: Poppins (Misión 6) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 2. Iconos Font Awesome mediante CDN (Misión 4) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- hoja de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Contenedor general: Usamos <article> porque una credencial es una pieza de contenido independiente -->
+  <article class="credencial">
+
+    <!-- Insignia flotante (la posicionaremos luego con CSS) -->
+    <span class="badge">FRONTEND</span>
+
+    <!-- SECCIÓN 1: Encabezado semántico -->
+    <header class="credencial-header">
+      <div class="logo">
+        <span class="logo-principal">DEV</span><span class="logo-secundario">genn</span>
+      </div>
+    </header>
+
+    <!-- SECCIÓN 2: Información principal -->
+    <main class="credencial-body">
+      
+      <!-- Contenedor para la foto -->
+      <div class="avatar-contenedor">
+        <img 
+          src="carlos.png" 
+          alt="Foto de Carlos Pérez" 
+          class="avatar-img"
+        >
+      </div>
+
+      <!-- Bloque con los datos del usuario -->
+      <div class="info-usuario">
+        <h2 class="usuario-nombre">Carlos Pérez</h2>
+        <p class="usuario-rol">Fullstack Junior</p>
+
+        <!-- Lista no ordenada para los datos (en vez de usar <br>) -->
+        <ul class="datos-lista">
+          <li>
+            <i class="fa-solid fa-location-dot icono"></i>
+            <span><strong>Ciudad:</strong> Bogotá</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope icono"></i>
+            <span><strong>Correo:</strong> carlos@devgenn.com</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-github icono"></i>
+            <span><strong>GitHub:</strong> @carlosperez</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-code icono"></i>
+            <span><strong>Tech favorita:</strong> Java & CSS</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-gamepad icono"></i>
+            <span><strong>Hobby:</strong> Videojuegos</span>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <!-- SECCIÓN 3: Pie de la credencial -->
+    <footer class="credencial-footer">
+      <p class="frase-personal">"Si puedes imaginarlo, puedes programarlo"</p>
+      <div class="codigo-barras">||||||||||||||||||||||||||||||</div>
+    </footer>
+
+  </article>
+
+</body>
+</html>
